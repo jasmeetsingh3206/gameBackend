@@ -81,6 +81,7 @@ io.on("connection", (socket) => {
     console.log(client1Id, client2Id+"we are the two clients");
       
       socket.on("movePaddle", (data) => {
+        debugger;
        console.log(data.socketID+"i am the socket id")
      
         if (data.direction === 'left') {
@@ -157,3 +158,4 @@ io.on("connection", (socket) => {
     }
   });
 });
+// isse copy kar de
